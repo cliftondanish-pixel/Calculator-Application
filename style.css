@@ -3,13 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+#display {
+    background-color: #000000;
+    color: greenyellow;
+}
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #373737;
+    background-color: #222222;
+    padding-top: 60px;
 }
 
 .title {
@@ -24,7 +28,7 @@ body {
 .calculator {
     width: 400px;
     height: 600px;
-    background: #000000;
+    background: #333333;
     border-radius: 10px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
     display: grid;
@@ -50,25 +54,52 @@ button {
     font-weight: 900;
     border-radius: 20px;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #555555;
+    color: #ffffff;
+    border: none;
 }
 
 button:hover {
-    background: #504f4f;
-    color: #cbcbcb;
+    background: #969696;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.btn-col {
+    background-color: #ff9500;
+    color: #ffffff;
+}
+.btn-col:hover {
+    background-color: #ffb84d;
+    color: #ffffff;
+    transition: 0.3s;
+}
+#clear {
+    color: #ffffff;
+    background-color: #e63946;
+}
+#clear:hover {
+    color: #ffffff;
+    background-color: #969696;
     transition: 0.3s;
 }
 
 #del {
-    color: #f60b0b;
+    color: #ffffff;
+    background-color: #457b9d;
 }
 
+#del:hover {
+    color: #ffffff;
+    background-color: #969696;
+    transition: 0.3s;
+}
 #eql {
-    background: #f60b0b;
-    color: black;
+    color: #ffffff;
+    background-color: #2a9d8f;
 }
-
 #eql:hover {
-    background: #890606;
-    color: black;
+    color: #ffffff;
+    background-color: #969696;
+    transition: 0.3s;
 }

@@ -22,5 +22,9 @@ function del() {
   input.value = input.value.slice(0, -1);
 }
 function equal() {
-  input.value = eval(input.value);
+  try {
+    input.value = eval(input.value);
+  } catch (e) {
+    input.value = "Error";
+  }
 }
